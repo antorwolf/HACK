@@ -1,4 +1,5 @@
 import time
+import random
 
 print("You open your computer and see this on the screen......")
 time.sleep(3)
@@ -21,14 +22,14 @@ elif SURE == ("n"):
        print ("DONE!")
        print("CORE MEMORY WAS DELETED!")
 NAME = input("Insert your name")
-print("Hello user " + NAME + " !")
+print("Hello user " + NAME + "!")
 time.sleep(2)
 print("ALERT!")
 time.sleep(1)
 print("MAIN ACCOUNT IN USE.")
 HACK2 = input("MAIN ACCOUNT IN RISK! (main account has a risk of being hacked) START DEFCON VIRUS ALERT ? y/n")
 if HACK2 == ("y"):
-    print(" INITALIZING DEFCON PROTOCOL")
+    print(" INITIALIZING DEFCON PROTOCOL")
 elif HACK2 == ("n"):
     print("DEFCON PROTOCOL DEACTIVATED...")
     print("ALERT!")
@@ -114,7 +115,7 @@ elif HACK2 == ("n"):
     time.sleep(2)
 print("VIRUS WAS FOUND AND DESTROYED")
 time.sleep(4)
-print("User " + NAME + " you have one email on your inbox")
+print("User " + NAME + " you have one email in your inbox")
 time.sleep(2)
 print("Opening inbox..")
 time.sleep(3)
@@ -131,7 +132,7 @@ if EGG == ("AlegY?"):
     print("Some say that this will not matter for the story of truth...")
     print("TRANSFERING $1,000,000,000,000,000,000,000,000,000 to " + NAME + "´s bank account...")
 elif EGG == ("n"):
-    print("YOU FAILED TO ACHIVE THE EASTER EGG YOU LITTLE CREATURE!")
+    print("YOU FAILED TO ACHIEVE THE EASTER EGG YOU LITTLE CREATURE!")
 print("  Deleting email.")
 time.sleep(2)
 print("Quiting inbox...")
@@ -140,11 +141,19 @@ print("Plugin in USB STICK: Disk X) 100% full / max 110 terabytes...")
 time.sleep(7)
 print("Runing AI.kba...")
 time.sleep(5)
-print("Greetings " + NAME +" I am your personal AI(artificial intellingence) assistant")
+print("Greetings " + NAME + " I am your personal AI(artificial intelligence) assistant")
 time.sleep(5)
-print("I am gooing to open the KE archive...")
+print("I am going to open the KE archive...")
 print("Opening...")
 time.sleep(5)
 print("EXECUTING...")
 time.sleep(5)
 
+for x in range(1,1000):
+  numbers = random.randint(0, int(x/20))
+  for number in range(1,numbers):
+    for p in range(1, random.randint(1,10)):
+      print(" ", end="")
+    print(random.randint(1,100000), end="")
+  print(" ")
+ 
