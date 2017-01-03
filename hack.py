@@ -167,7 +167,7 @@ balls = [i for i in range(1,5000)]
 random.shuffle(balls)
 nums = balls[:10]
 
-print("Hello, you have ten lucky balls, if you get the numbers 1,7,11,35,46 you win $100000000.01, remember you get numbers from 1 to 50.Here are your numbers:")
+print("Hello, you have ten lucky balls, if you get the numbers 1,7,11,35,46,101,433,743,854,997,1010,1283,1344,1284,3844,4999 you win $100000000.01, remember you get numbers from 1 to 5000.Here are your numbers:")
 time.sleep(4)
 print(nums)
 print("Remember to split any winnings with me!")
