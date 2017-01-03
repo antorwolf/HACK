@@ -156,4 +156,21 @@ for x in range(1,1000):
       print(" ", end="")
     print(random.randint(1,100000), end="")
   print(" ")
- 
+print("Done!")
+time.sleep(1)
+print("The KE archive was executed")
+print("New email...")
+print("EXECUTING...")
+nums = []
+
+balls = [i for i in range(1,5000)]
+random.shuffle(balls)
+nums = balls[:10]
+
+print("Hello, you have ten lucky balls, if you get the numbers 1,7,11,35,46 you win $100000000.01, remember you get numbers from 1 to 50.Here are your numbers:")
+time.sleep(4)
+print(nums)
+print("Remember to split any winnings with me!")
+time.sleep(3)
+print("Deleting email...")
+print("AI: well that was strange...")
