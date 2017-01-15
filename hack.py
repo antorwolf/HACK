@@ -1,5 +1,6 @@
 import time
 import random
+import sys
 
 print("You open your computer and see this on the screen......")
 time.sleep(3)
@@ -149,7 +150,7 @@ time.sleep(5)
 print("EXECUTING...")
 time.sleep(5)
 
-for x in range(1,1000):
+for x in range(1,100):
   numbers = random.randint(0, int(x/20))
   for number in range(1,numbers):
     for p in range(1, random.randint(1,10)):
@@ -174,3 +175,55 @@ print("Remember to split any winnings with me!")
 time.sleep(3)
 print("Deleting email...")
 print("AI: well that was strange...")
+print("New email. You have received 100 EUR")
+time.sleep(1)
+print("Executing process LOTTERY.XD")
+time.sleep(1)
+print("The lottery tickets cost 20 EUR each")
+money = 100
+tickets_to_buy = 0
+irritate = 0
+
+while (tickets_to_buy <= 0) | (tickets_to_buy > 5):
+  try:
+    tickets_to_buy = int(input("How many tickets do you want to buy? (1-5) [only chance to buy!]"))
+  except:
+    irritate_out = {
+      1 : "I didn't understand, please repeat",
+      2 : "You are talking loco, please repeat",
+      3 : "Are you thinking I'm tonto? Come on and repeat",
+      4 : "Kill the moscardon or will shoot you with my trabuco, repeat or die",
+      5 : "I am not going to let you repeat anything more, your 100 EUR are now mine" }
+    irritate += 1
+    print(irritate_out[irritate])
+    if irritate == 5:
+      sys.exit("Abnormal user detected, you are now banned!")
+      
+# The following code has a little "timo" for the user.
+# Maybe you have the eye of hawk and you can detect the "timo". Good lucking
+lottery_numbers = set()
+for ticket in range(tickets_to_buy):
+  number = random.randrange(0,99999)
+  lottery_numbers.add(number)
+  money -= 20
+  
+lucky_numbers = {
+  77777 :  1000000,
+  58730 :   500000,
+  88543 :   250000,
+    666 : -1000000,
+      1 :        1
+  }
+
+#uncomment following line to be a lucky rico
+#lottery_numbers.add(77777)
+print("Your numbers are these: " + str(lottery_numbers))
+
+for number in lottery_numbers:
+  if number in lucky_numbers:
+    money += lucky_numbers[number]
+    print("You are a lucky tipo, and you now have " + str(money) + " EUR")
+  
+print("Your total money in your pocket is " + str(money) + " EUR")
+
+
